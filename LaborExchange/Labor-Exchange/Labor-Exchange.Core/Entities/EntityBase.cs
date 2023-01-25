@@ -1,0 +1,7 @@
+﻿namespace Labor_Exchange.Core.Entities
+{
+    public abstract class EntityBase
+    {
+        public int Id { get; set; }
+    }
+}

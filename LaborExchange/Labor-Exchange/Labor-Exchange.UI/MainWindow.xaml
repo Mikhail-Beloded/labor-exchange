@@ -1,0 +1,27 @@
+﻿<Window x:Class="Labor_Exchange.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Labor_Exchange.UI"
+        mc:Ignorable="d"
+        Title="Labor Exchange" Height="700" Width="1000">
+    <Grid Background="Coral">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="For work offers" Margin="50,435,566,68" FontSize="20" Click="WorkOffersTable" Grid.ColumnSpan="2"/>
+        <Button Content="For employees" Margin="563,437,51,68" RenderTransformOrigin="0.332,1.213" FontSize="20" Click="EmployeesTable" Grid.ColumnSpan="2">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="1.322"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.243"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="Storage" Margin="250,91,250,393" FontSize="20" Click="Storage_Click" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
